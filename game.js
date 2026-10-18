@@ -1,6 +1,6 @@
 
-// Tiny Projects serves its games under /games/. Anywhere else (GitHub Pages, a local file) there is no menu to return to.
-if(!/^\/games\//.test(location.pathname)){document.documentElement.classList.add("standalone");document.title=document.title.replace(/ \| Tiny Projects$/,"");}
+// The hosting site passes its main menu as <meta name="home-url">. Without it (GitHub Pages, a local file) there is nothing to return to.
+{const homeUrl=document.querySelector('meta[name="home-url"]')?.content;if(homeUrl){for(const link of document.querySelectorAll(".portal-exit,.settings-exit"))link.href=homeUrl;}else{document.documentElement.classList.add("standalone");document.title=document.title.replace(/ \| Tiny Projects$/,"");}}
 const outputDom=document.getElementById("terminal");
 const choicesDom=document.getElementById("choices");
 const statContent=document.getElementById("statContent");

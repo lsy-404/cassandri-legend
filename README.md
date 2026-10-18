@@ -4,7 +4,7 @@
 
 主创：槃清 · 编码：武乙凌薇
 
-在线游玩：<https://tiny.leisiyu.dev/games/cassandri-legend/>（Tiny Projects，以固定提交的子模块发布），也可在 <https://lsy-404.github.io/cassandri-legend/> 游玩。「退出游戏」入口和标题中的 Tiny Projects 只在 Tiny 的 `/games/` 路径下出现。2026-08-22 至 2026-10-17 的开发历史来自 [lsy-404/tiny](https://github.com/lsy-404/tiny) 的 `games/cassandri-legend/`。
+在线游玩：<https://tiny.leisiyu.dev/games/cassandri-legend/>（Tiny Projects，以固定提交的子模块发布），也可在 <https://lsy-404.github.io/cassandri-legend/> 游玩。「退出游戏」入口指向托管站点在页面中写入的 `<meta name="home-url">`（Tiny Projects 构建时由 `HOME_URL` 提供）；没有它时不显示退出入口，标题也不带 Tiny Projects。2026-08-22 至 2026-10-17 的开发历史来自 [lsy-404/tiny](https://github.com/lsy-404/tiny) 的 `games/cassandri-legend/`。
 
 入口由 [`index.html`](index.html)、[`styles.css`](styles.css) 和 [`game.js`](game.js) 组成。三者使用相对路径加载，直接用浏览器打开 `index.html` 即可运行；经典脚本会保留现有内联 `onclick` 与全局函数兼容性。
 

@@ -115,6 +115,7 @@ header h1{font-size:14px;}#terminal-wrap #battleArena{grid-template-columns:1fr;
 }
 
 #settingsOverlay .settings-exit,#welcomeOverlay .portal-exit{display:block;text-decoration:none;}
+html.standalone #settingsOverlay .settings-exit,html.standalone #welcomeOverlay .portal-exit{display:none;}
 
 #welcomeOverlay .welcome-panel{max-width:820px;padding:24px;}
 #welcomeOverlay .welcome-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,300px);gap:28px;align-items:center;}

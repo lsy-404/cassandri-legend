@@ -1,0 +1,11 @@
+{
+  "name": "cassandri-legend",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

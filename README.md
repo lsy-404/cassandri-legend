@@ -2,13 +2,15 @@
 
 浏览器文字冒险 RPG。当前发布版为《卡桑德里传说》8.0，采用无需打包器的纯静态资源结构。
 
-在线游玩：<https://tiny.leisiyu.dev/games/cassandri-legend/>
+主创：槃清 · 编码：武乙凌薇
+
+在线游玩：<https://tiny.leisiyu.dev/games/cassandri-legend/>（Tiny Projects，以固定提交的子模块发布），也可在 <https://lsy-404.github.io/cassandri-legend/> 游玩。「退出游戏」入口和标题中的 Tiny Projects 只在 Tiny 的 `/games/` 路径下出现。2026-08-22 至 2026-10-17 的开发历史来自 [lsy-404/tiny](https://github.com/lsy-404/tiny) 的 `games/cassandri-legend/`。
 
 入口由 [`index.html`](index.html)、[`styles.css`](styles.css) 和 [`game.js`](game.js) 组成。三者使用相对路径加载，直接用浏览器打开 `index.html` 即可运行；经典脚本会保留现有内联 `onclick` 与全局函数兼容性。
 
 ## 更新原则
 
-用户提供的 7.0 单文件仅作为玩法、数值与文案参考；运行入口仍为 [`index.html`](index.html)，以增量兼容方式保留本站现有界面。
+用户提供的 7.0 单文件仅作为玩法、数值与文案参考；运行入口仍为 [`index.html`](index.html)，以增量兼容方式保留本站现有界面。6.5 原始 HTML 原样归档在 [`reference/original-6.5.html`](reference/original-6.5.html)，仅用于核对玩法与文案。
 
 - 4 种职业 × 4 种祝福 × 20 波随机战斗
 - 随机装备、元素套装、装备与敌人特性
@@ -36,6 +38,6 @@
 
 ## 运行
 
-无需安装依赖。直接用浏览器打开 [`index.html`](index.html) 即可游玩；仓库根目录执行 `npm run build` 会将三个入口资源一并复制到 `dist/games/cassandri-legend/`。
+无需安装依赖。直接用浏览器打开 [`index.html`](index.html) 即可游玩。测试位于 `test/`，使用 Node.js 22.13 或更新版本运行 `npm test`。
 
 旧存档仍使用 `kasandri6_save` 永久档案键，并在读取时补齐 8.0 字段；自动档和三个手动槽继续保持兼容。

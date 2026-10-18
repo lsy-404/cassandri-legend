@@ -1,4 +1,6 @@
 
+// Tiny Projects serves its games under /games/. Anywhere else (GitHub Pages, a local file) there is no menu to return to.
+if(!/^\/games\//.test(location.pathname)){document.documentElement.classList.add("standalone");document.title=document.title.replace(/ \| Tiny Projects$/,"");}
 const outputDom=document.getElementById("terminal");
 const choicesDom=document.getElementById("choices");
 const statContent=document.getElementById("statContent");
